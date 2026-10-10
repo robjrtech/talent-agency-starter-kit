@@ -1,0 +1,6 @@
+{
+  "device": "<device-slug, e.g. MacBook-Pro>",
+  "session_id": "<this session's ID, in full>",
+  "active_subagents": 0,
+  "updated_at": "<ISO 8601 UTC timestamp, e.g. 2026-10-07T14:32:00Z>"
+}
