@@ -73,6 +73,7 @@ up or down (see "Overrides" below).
 | Sysadmin Agent | Standard | Medium | Setup and configuration are verifiable by running them. |
 | Support/Triage Agent | Fast for first pass | Low | Classifying and routing a report is rule-based. Root-causing an unknown bug moves to Standard/High under the Scientific Method policy. |
 | Content Integrity Agent | Fast | (hook) | Runs on every external read, so it must be cheap. Its rule-based first layer backs it up, and a reject halts work for your review. |
+| IT Automation Agent | Fast | Low | Runs approved, step-by-step tasks that each carry their own check (scan exit codes, expected output). Never deploys or changes anything, and stops on any finding it can't classify. |
 
 ### Finance and Accounting
 
@@ -83,6 +84,7 @@ up or down (see "Overrides" below).
 | Reporting Agent | Standard | Medium | Builds standard reports from data. The totals can be checked against the source. |
 | Bookkeeping Agent | Fast | Low | Categorizing and reconciling against rules. Mismatches are visible. Unclear transactions go to you, not a guess. |
 | Invoicing Agent | Fast | Low | Template-driven drafts. You review before anything is sent. |
+| Finance Automation Agent | Standard | Low | Approved steps with built-in checks, but it runs unattended on real figures, so a quiet mistake may not surface until month end. One tier above Bookkeeping for that reason. Never sends or pays. |
 
 ### Operations
 
@@ -92,6 +94,7 @@ up or down (see "Overrides" below).
 | Process Agent | Standard | Medium | Writes SOPs from decisions already made. Compliance SOPs move to High. |
 | Vendor/Ops Agent | Standard | Medium | Coordination and vetting against a checklist (including OWASP evidence). Anything missing is flagged to you. |
 | Scheduling Agent | Fast | Low | Calendar coordination is rule-based and easy to check. Nothing is sent without confirmation. |
+| Operations Automation Agent | Fast | Low | Status checks and digests from approved steps, easy to verify. Never sends or files. |
 
 ### Research and Development
 
@@ -100,6 +103,7 @@ up or down (see "Overrides" below).
 | Quantitative Researcher | Deep | High | Statistical design errors (overfitting, leakage) look like success until real money is at stake. |
 | Product Agent | Standard | Medium; High for specs | The spec is what engineers build from, so a weak spec causes rework downstream. |
 | Research Agent | Standard | Medium | Gathers and summarizes sources. Claims a decision depends on go through the Scientific Method policy and your review. |
+| Research Automation Agent | Fast | Low | Sourced digests from approved steps. Every claim carries a link you can check, and conclusions go to the Research Agent, not the digest. |
 | Prototyping Agent | Standard | Medium | Proofs of concept are meant to be thrown away. Speed matters more than polish. |
 
 ### Tasks that aren't tied to one agent

@@ -12,6 +12,7 @@ is still loaded. See [Overview.md](Overview.md) for the department/agent structu
 | **Invoicing Agent** | `pdf`/`docx` (invoice generation), `xlsx` (payment-status tracking) |
 | **Financial Analyst** | `xlsx`, `dataviz`, `claude-api` (if modeling gets AI-assisted) |
 | **Financial Risk Manager** | `xlsx` (exposure/stress-test models), `dataviz` (risk dashboards, drawdown charts), `pdf`/`docx` (risk reports) |
+| **Finance Automation Agent** | `xlsx`, `pdf`/`docx` (running approved recurring tasks); runs under routines made with `schedule` or local `loop` timers armed by the Scheduling Agent |
 
 ## Information Technology
 | Agent | Skills that fit its job |
@@ -31,6 +32,7 @@ is still loaded. See [Overview.md](Overview.md) for the department/agent structu
 | **QA Engineer** | `run` (launch/exercise the app), `code-review` (test-coverage angle) |
 | **System Design Engineer** | `code-review` (architecture/dependency angle), `simplify` |
 | **Content Integrity Agent** | none of the loaded skills map directly; runs as Claude Code hooks (`~/.claude/hooks/content_gate.py` + a Haiku agent hook), maintained via `update-config` |
+| **IT Automation Agent** | none of the loaded skills map directly — runs read-only scans and checks via Bash; runs under routines made with `schedule` or local `loop` timers armed by the Scheduling Agent |
 
 ## Operations
 | Agent | Skills that fit its job |
@@ -39,6 +41,7 @@ is still loaded. See [Overview.md](Overview.md) for the department/agent structu
 | **Process Agent** | `loop` (recurring workflows — secondary owner alongside Scheduling), `anthropic-skills:skill-creator` (turning an SOP into a repeatable skill) |
 | **Vendor/Ops Agent** | none of the loaded skills fit — genuinely outside this skill set, not a gap |
 | **Notion Agent** | none of the loaded skills map directly — works through the connected Notion MCP tools (search/fetch/create/update pages), not a packaged skill |
+| **Operations Automation Agent** | none of the loaded skills map directly — reads calendars and Notion through tools and connectors; runs under routines made with `schedule` or local `loop` timers armed by the Scheduling Agent |
 
 ## Research and Development
 | Agent | Skills that fit its job |
@@ -47,6 +50,7 @@ is still loaded. See [Overview.md](Overview.md) for the department/agent structu
 | **Prototyping Agent** | `pptx` (presenting POCs to stakeholders), `design`, `artifact-design`/`artifact-diagramming`/`artifact-capabilities`, `dataviz` |
 | **Product Agent** | `docx`/`pptx` (specs, roadmap decks), `dataviz` (success metrics) |
 | **Quantitative Researcher** | `xlsx`, `dataviz`, `claude-api` |
+| **Research Automation Agent** | none of the loaded skills map directly (search/fetch tools for monitoring digests); runs under routines made with `schedule` or local `loop` timers armed by the Scheduling Agent |
 
 ## No natural owner
 These are Claude/session-management skills, not business-domain work, so they don't

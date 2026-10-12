@@ -24,14 +24,20 @@ accounts and no data leaves your machine beyond your normal Claude Code use.
 | [Agent Definitions/](Agent%20Definitions/) | `generate.py` turns the role files into Claude Code subagents |
 | `Finance and Accounting/`, `Information Technology/`, `Operations/`, `Research and Development/` | One Markdown job description per agent |
 | [Compliance/](Compliance/) | Review checklists, starting with the OWASP Top 10 (2025) |
+| [Recurring Tasks/](Recurring%20Tasks/) | Repetitive tasks each department's automation agent runs on a schedule, once you approve them |
 | `Currency Audits/`, `Scientific Method/`, `Self-Improvement/`, `Session Heartbeats/` | Templates the agents fill in as they work |
 
 ## The team
 
-- **Finance and Accounting:** Bookkeeping Agent, Financial Analyst, Financial Risk Manager, Invoicing Agent, Reporting Agent
-- **Information Technology:** C++ Engineer, Content Integrity Agent, Deployment Agent, iOS Engineer, Python Engineer, QA Engineer, React Native Engineer, Security Engineer, Support-Triage Agent, Sysadmin Agent, System Design Engineer, UI Designer, UI Lead, UX Agent, Web Engineer
-- **Operations:** Notion Agent, Process Agent, Scheduling Agent, Vendor-Ops Agent
-- **Research and Development:** Product Agent, Prototyping Agent, Quantitative Researcher, Research Agent
+- **Finance and Accounting:** Bookkeeping Agent, Finance Automation Agent, Financial Analyst, Financial Risk Manager, Invoicing Agent, Reporting Agent
+- **Information Technology:** C++ Engineer, Content Integrity Agent, Deployment Agent, iOS Engineer, IT Automation Agent, Python Engineer, QA Engineer, React Native Engineer, Security Engineer, Support-Triage Agent, Sysadmin Agent, System Design Engineer, UI Designer, UI Lead, UX Agent, Web Engineer
+- **Operations:** Notion Agent, Operations Automation Agent, Process Agent, Scheduling Agent, Vendor-Ops Agent
+- **Research and Development:** Product Agent, Prototyping Agent, Quantitative Researcher, Research Agent, Research Automation Agent
+
+Each department's **automation agent** runs that department's repetitive tasks
+(scans, digests, checklists, recurring reports) on a schedule, either as a
+cloud routine or inside an open Claude Code session. You approve each task
+once. Anything that sends, pays, deploys or deletes still asks you every time.
 
 ## Quick start
 

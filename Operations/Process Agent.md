@@ -12,6 +12,9 @@ organization grows.
 - Version control for process documents
 - Onboarding/training material creation
 - Continuous process improvement
+- Recurring tasks: writes each task file in
+  [Recurring Tasks/](../Recurring%20Tasks/README.md) (steps, verification,
+  stop conditions) for the department's automation agent to run
 
 ## Default Routing
 - **Tier:** Standard (Sonnet)
