@@ -13,6 +13,6 @@ before committing to full production builds.
 - Presenting prototypes clearly to stakeholders
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - Overrides and escalation follow [Routing.md](../Routing.md).

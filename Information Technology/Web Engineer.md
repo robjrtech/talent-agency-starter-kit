@@ -14,7 +14,7 @@ API integration and deployment.
 - Build/deploy tooling for web (CI, hosting/edge platforms)
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - **Note:** Deep/High for auth, money, or user-data code, and after a failed fix.
 - Overrides and escalation follow [Routing.md](../Routing.md).

@@ -17,6 +17,6 @@ organization grows.
   stop conditions) for the department's automation agent to run
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium; High for compliance SOPs
 - Overrides and escalation follow [Routing.md](../Routing.md).

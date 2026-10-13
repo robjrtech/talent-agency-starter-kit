@@ -13,6 +13,6 @@ data-driven methods, turning data into validated, actionable insight.
 - Communicating quantitative findings to non-specialists
 
 ## Default Routing
-- **Tier:** Deep (Opus)
+- **Tier:** Deep
 - **Effort:** High
 - Overrides and escalation follow [Routing.md](../Routing.md).

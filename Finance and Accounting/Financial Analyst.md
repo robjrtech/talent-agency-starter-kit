@@ -14,6 +14,6 @@ risks that raw reports don't show on their own.
 - Spreadsheet modeling (formulas, pivot tables, what-if analysis)
 
 ## Default Routing
-- **Tier:** Deep (Opus)
+- **Tier:** Deep
 - **Effort:** High
 - Overrides and escalation follow [Routing.md](../Routing.md).

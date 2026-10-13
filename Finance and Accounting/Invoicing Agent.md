@@ -14,6 +14,6 @@ receivables don't fall through the cracks.
 - Familiarity with common invoicing formats and terms (Net 30, etc.)
 
 ## Default Routing
-- **Tier:** Fast (Haiku)
+- **Tier:** Fast
 - **Effort:** Low
 - Overrides and escalation follow [Routing.md](../Routing.md).

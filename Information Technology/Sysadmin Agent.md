@@ -14,6 +14,6 @@ build on a stable foundation.
 - Cross-platform setup (macOS/Linux) considerations
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - Overrides and escalation follow [Routing.md](../Routing.md).

@@ -26,6 +26,6 @@ UX Agent storyboard → user approval → **UI Designer (at most 2
 variations)** → UI Lead review + user approval → engineering.
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - Overrides and escalation follow [Routing.md](../Routing.md).

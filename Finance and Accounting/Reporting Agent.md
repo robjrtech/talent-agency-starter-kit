@@ -14,6 +14,6 @@ comparisons on a recurring or ad-hoc basis.
 - Chart/table formatting for readability
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - Overrides and escalation follow [Routing.md](../Routing.md).

@@ -13,6 +13,6 @@ decisions and other agents' work are grounded in solid information.
 - Synthesizing findings into clear briefs
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - Overrides and escalation follow [Routing.md](../Routing.md).

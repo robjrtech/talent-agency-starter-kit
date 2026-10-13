@@ -15,7 +15,7 @@ from architecture through store-ready builds.
 - Performance (list virtualization, Reanimated/Skia charts) and testing (Jest, React Native Testing Library, E2E)
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - **Note:** Deep/High for auth, money, or user-data code, and after a failed fix.
 - Overrides and escalation follow [Routing.md](../Routing.md).

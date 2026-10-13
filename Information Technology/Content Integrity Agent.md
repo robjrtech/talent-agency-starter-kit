@@ -60,7 +60,7 @@ No agent can switch the gate off:
   files.
 
 **Changing the gate is user-only.** Source of truth:
-`Information Technology/Content Gate/`. Edit there by hand, run
+`Adapters/Claude Code/Content Gate/`. Edit there by hand, run
 `/usr/bin/python3 -I selftest.py` in that folder, then run
 `sudo bash install.sh`. Agents can't edit any settings files, so other
 settings changes (such as permission allowlists) are also made by hand.
@@ -101,7 +101,7 @@ obfuscated shell command could still alter them.
   (new connectors or tools that need adding to the hook matcher).
 
 ## Default Routing
-- **Tier:** Fast (Haiku)
+- **Tier:** Fast
 - **Effort:** set by the hook
 - **Note:** Runs on every external read; layer 1 rules back it up.
 - Overrides and escalation follow [Routing.md](../Routing.md).

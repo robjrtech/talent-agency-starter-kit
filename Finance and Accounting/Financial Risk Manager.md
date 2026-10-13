@@ -17,7 +17,7 @@ how badly."
 - Writing plain-language risk reports and alerts for decision-makers
 
 ## Default Routing
-- **Tier:** Deep (Opus)
+- **Tier:** Deep
 - **Effort:** High
 - **Note:** Gate; never downgraded for reviews.
 - Overrides and escalation follow [Routing.md](../Routing.md).

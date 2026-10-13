@@ -17,7 +17,7 @@ for maturity, maintainability, and fit before other engineers build on them.
 - Peer review of architecture experiment records (Scientific method policy), such as performance tests, library trials, and design spikes
 
 ## Default Routing
-- **Tier:** Deep (Opus)
+- **Tier:** Deep
 - **Effort:** High
 - **Note:** Architecture gate; never downgraded for reviews.
 - Overrides and escalation follow [Routing.md](../Routing.md).

@@ -1,8 +1,11 @@
-# Skills Mapping
+# Skills Mapping (Claude Code)
+
+This file is part of the Claude Code adapter. Other tools have their own skills and
+connectors; see [Adapters/](../README.md).
 
 Maps Claude's available skills to the Talent Agency agent(s) whose job they support.
 Skills change over time — treat this as a snapshot, not a guarantee every listed skill
-is still loaded. See [Overview.md](Overview.md) for the department/agent structure.
+is still loaded. See [Overview.md](../../Overview.md) for the department/agent structure.
 
 ## Finance and Accounting
 | Agent | Skills that fit its job |
@@ -62,7 +65,7 @@ readiness) keep partial use.
 
 ## Local Application Mapping (computer use)
 
-Per [Overview.md](Overview.md#22)'s "Local application access" policy, agents may
+Per [Overview.md](../../Overview.md#22)'s "Local application access" policy, agents may
 drive a real local app via computer use instead of only writing a file — e.g. drafting
 a report directly in a Text Editor. Governed by computer use's own rules: user approves
 each app per session, apps are restricted to their tier (read/click/full), no clicking

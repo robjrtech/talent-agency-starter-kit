@@ -13,7 +13,7 @@ one-off automation to production backend code.
 - Performance profiling and optimization
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - **Note:** Deep/High for auth, money, or user-data code, and after a failed fix.
 - Overrides and escalation follow [Routing.md](../Routing.md).

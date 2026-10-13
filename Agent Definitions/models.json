@@ -1,0 +1,38 @@
+{
+  "_about": "Which model each tool uses for the Fast / Standard / Deep tiers in Routing.md. Edit freely. \"inherit\" means: use whatever model the tool is already set to. null means: leave the model out of the generated file. Model names change often; the quarterly currency audit re-checks this file. Checked 2026-10-13.",
+  "claude": {
+    "_note": "Claude Code aliases. Effort is written as `effort:` in the agent frontmatter.",
+    "fast": "haiku",
+    "standard": "sonnet",
+    "deep": "opus",
+    "effort": true
+  },
+  "codex": {
+    "_note": "OpenAI Codex. Effort is written as model_reasoning_effort. OpenAI recommends gpt-6.1-sol for complex agentic work and gpt-6-luna for focused, repeatable tasks.",
+    "fast": "gpt-6-luna",
+    "standard": "gpt-6.1-sol",
+    "deep": "gpt-6.1-sol",
+    "effort": true
+  },
+  "cursor": {
+    "_note": "Cursor. inherit uses the model picked in Cursor. To pin one, use a model ID, optionally with effort in brackets, e.g. \"claude-opus-5[effort=high]\".",
+    "fast": "inherit",
+    "standard": "inherit",
+    "deep": "inherit",
+    "effort": false
+  },
+  "gemini": {
+    "_note": "Gemini CLI model aliases. If your CLI version rejects an alias, replace it with a full model ID from /model.",
+    "fast": "flash-lite",
+    "standard": "flash",
+    "deep": "pro",
+    "effort": false
+  },
+  "copilot": {
+    "_note": "GitHub Copilot. null leaves the model out, so Copilot uses its current model. To pin one, use a model name from Copilot's model picker.",
+    "fast": null,
+    "standard": null,
+    "deep": null,
+    "effort": false
+  }
+}

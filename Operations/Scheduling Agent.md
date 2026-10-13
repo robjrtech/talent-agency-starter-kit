@@ -19,6 +19,6 @@ the right order and nothing slips.
 - Prioritization under competing constraints
 
 ## Default Routing
-- **Tier:** Fast (Haiku)
+- **Tier:** Fast
 - **Effort:** Low
 - Overrides and escalation follow [Routing.md](../Routing.md).

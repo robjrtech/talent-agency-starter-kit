@@ -30,16 +30,18 @@ Two questions decide the tier:
 
 ## The tiers
 
-Model versions as of 2026-10-04. The quarterly currency audit re-checks them.
+Tiers are tool-neutral. Which model each tier uses in each tool is set in
+[Agent Definitions/models.json](Agent%20Definitions/models.json). The
+quarterly currency audit re-checks it.
 
-| Tier | Model | Strengths | Use for |
-|------|-------|-----------|---------|
-| **Fast** | Haiku 4.5 | Fast and cheap; reliable on clear rules | Mechanical, rule-based work that's easy to check |
-| **Standard** (default) | Sonnet 5.5 | Strong builder; follows a clear spec well | Building and writing from an approved spec or plan |
-| **Deep** | Opus 5.5 | Best at ambiguity, trade-offs and catching subtle errors | Judgment, ambiguity, gates, and anything others build on |
+| Tier | Strengths | Use for | Example (Claude / OpenAI / Gemini) |
+|------|-----------|---------|------------------------------------|
+| **Fast** | Fast and cheap; reliable on clear rules | Mechanical, rule-based work that's easy to check | Haiku / GPT-6 Luna / Flash-Lite |
+| **Standard** (default) | Strong builder; follows a clear spec well | Building and writing from an approved spec or plan | Sonnet / GPT-6.1 Sol / Flash |
+| **Deep** | Best at ambiguity, trade-offs and catching subtle errors | Judgment, ambiguity, gates, and anything others build on | Opus / GPT-6.1 Sol (high effort) / Pro |
 
-Only these three tiers are used. Fable 5.1 is not used (user decision,
-2026-10-04).
+Only these three tiers are used. If a tool can't pin a model per agent, the
+tier still tells the agent how carefully to work and when to escalate.
 
 ## Effort levels
 
@@ -187,8 +189,8 @@ plan with usage limits:
 - **One level of delegation by default.** A subagent you spawn does its
   task directly rather than spawning sub-agents of its own — ask the user
   before going deeper, so the delegation tree stays shallow and auditable.
-- Agents **save progress to disk as they go**. Resume an interrupted agent with
-  SendMessage. Never restart it.
+- Agents **save progress to disk as they go**. Resume an interrupted agent
+  (in Claude Code, with SendMessage) instead of restarting it.
 
 Why: several Deep-tier subagents running in parallel can use up a whole
 usage window in minutes, and all of them can fail partway through.
@@ -196,7 +198,7 @@ usage window in minutes, and all of them can fail partway through.
 #### Checking usage across sessions and devices (added 2026-10-07)
 
 "Check usage first" above assumed one session tracking its own count. That
-breaks when the user runs multiple Claude Code sessions at once — different
+breaks when the user runs multiple agent sessions at once, in one tool or several — different
 project builds, possibly on different devices — because separate sessions
 have no visibility into each other's active subagent count. The 3–4 cap is
 still global across all of them; the only thing that changes is how a
@@ -257,8 +259,9 @@ through the normal Notion approval gate.
 ## How it's applied
 
 Routing is **guidance the agents apply with judgment**, not a hard lock
-(user decision, 2026-10-04). Each role is a Claude Code subagent in
-`~/.claude/agents/`, generated from its role file by
+(user decision, 2026-10-04). Each role becomes a native agent in every
+supported tool (Claude Code, Codex, Cursor, Gemini CLI, Copilot), generated
+from its role file by
 [Agent Definitions/generate.py](Agent%20Definitions/README.md):
 
 - The definition sets the **default** model and effort from the role's

@@ -48,7 +48,7 @@ UX Agent storyboard → user approval → UI Designer (at most 2 variations)
 → **UI Lead review + user approval** → engineering.
 
 ## Default Routing
-- **Tier:** Deep (Opus)
+- **Tier:** Deep
 - **Effort:** High
 - **Note:** Design gate; never downgraded for reviews.
 - Overrides and escalation follow [Routing.md](../Routing.md).

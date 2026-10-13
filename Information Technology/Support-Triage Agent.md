@@ -14,7 +14,7 @@ directly when the fix is small and clear.
 - Quick-fix implementation for well-scoped issues
 
 ## Default Routing
-- **Tier:** Fast (Haiku) for first-pass triage
+- **Tier:** Fast for first-pass triage
 - **Effort:** Low
 - **Note:** Root-causing an unknown bug moves to Standard/High.
 - Overrides and escalation follow [Routing.md](../Routing.md).

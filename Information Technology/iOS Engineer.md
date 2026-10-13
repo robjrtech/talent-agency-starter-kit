@@ -14,7 +14,7 @@ through App Store release.
 - App Store submission, TestFlight, and release process
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - **Note:** Deep/High for auth, money, or user-data code, and after a failed fix.
 - Overrides and escalation follow [Routing.md](../Routing.md).

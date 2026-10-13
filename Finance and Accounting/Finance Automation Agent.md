@@ -30,6 +30,6 @@ user has approved.
   Agent and Scheduling Agent.
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Low
 - Overrides and escalation follow [Routing.md](../Routing.md).

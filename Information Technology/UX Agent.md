@@ -41,6 +41,6 @@ practice it's based on.
 variations) → UI Lead review + user approval → engineering.
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium; High for storyboards
 - Overrides and escalation follow [Routing.md](../Routing.md).

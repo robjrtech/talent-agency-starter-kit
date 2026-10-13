@@ -23,7 +23,7 @@ in the OWASP table of the project's compliance report. A project with an
 open gap doesn't ship until the user accepts the risk in writing or it's fixed.
 
 ## Default Routing
-- **Tier:** Deep (Opus)
+- **Tier:** Deep
 - **Effort:** High
 - **Note:** Security/OWASP gate; never downgraded for reviews.
 - Overrides and escalation follow [Routing.md](../Routing.md).

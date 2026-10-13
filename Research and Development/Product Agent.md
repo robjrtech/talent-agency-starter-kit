@@ -13,6 +13,6 @@ proposals that engineering and other departments can act on.
 - Defining success metrics for features
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium; High for specs
 - Overrides and escalation follow [Routing.md](../Routing.md).

@@ -13,7 +13,7 @@ memory footprint, or low-level control matter.
 - Systems-level and cross-platform programming
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - **Note:** Deep/High for security-sensitive code and after a failed fix.
 - Overrides and escalation follow [Routing.md](../Routing.md).

@@ -30,6 +30,6 @@ without anyone having to remember it. Only executes tasks in
   Agent and Scheduling Agent.
 
 ## Default Routing
-- **Tier:** Fast (Haiku)
+- **Tier:** Fast
 - **Effort:** Low
 - Overrides and escalation follow [Routing.md](../Routing.md).

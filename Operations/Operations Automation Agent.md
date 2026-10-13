@@ -25,6 +25,6 @@ checks, so operational follow-through doesn't depend on memory. Only executes ta
   Agent and Scheduling Agent.
 
 ## Default Routing
-- **Tier:** Fast (Haiku)
+- **Tier:** Fast
 - **Effort:** Low
 - Overrides and escalation follow [Routing.md](../Routing.md).

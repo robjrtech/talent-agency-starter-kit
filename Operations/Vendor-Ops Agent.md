@@ -21,6 +21,6 @@ in the compliance report's vendor section. If none exists, flag it to the
 Security Engineer and the user before onboarding.
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - Overrides and escalation follow [Routing.md](../Routing.md).

@@ -16,6 +16,6 @@ real behavior rather than assumed correct.
 - Peer review of experiment records for troubleshooting and testing (Scientific method policy): checks that predictions were written before testing, one variable was changed at a time, and disproven hypotheses were recorded
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium; High for test plans
 - Overrides and escalation follow [Routing.md](../Routing.md).

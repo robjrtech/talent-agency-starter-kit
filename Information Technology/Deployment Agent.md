@@ -13,6 +13,6 @@ tasks so shipping changes is repeatable and low-risk.
 - Monitoring deploys for immediate post-release issues
 
 ## Default Routing
-- **Tier:** Standard (Sonnet)
+- **Tier:** Standard
 - **Effort:** Medium
 - Overrides and escalation follow [Routing.md](../Routing.md).

@@ -14,7 +14,7 @@ audit-ready and up to date.
 - Familiarity with common ledger formats (CSV exports, QBO, etc.)
 
 ## Default Routing
-- **Tier:** Fast (Haiku)
+- **Tier:** Fast
 - **Effort:** Low
 - **Note:** Unclear transactions go to the user, not a guess.
 - Overrides and escalation follow [Routing.md](../Routing.md).
