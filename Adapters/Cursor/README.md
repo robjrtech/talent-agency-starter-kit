@@ -33,6 +33,9 @@ generator.
 
 - **Content Gate:** not ported. The untrusted-content rule applies as policy.
 - **Recurring tasks:** run them as **Local** tasks in an open session.
+- **Resuming sub-agents:** if an interrupted sub-agent can't be resumed
+  here, start a new one and point it at the progress it saved to disk
+  (Routing.md Rule 5).
 - **Read-only reviewers:** Cursor supports `readonly: true` for agents that
   shouldn't edit files. The generator doesn't set it. Gate agents (System
   Design Engineer, Security Engineer, UI Lead) are good candidates if you

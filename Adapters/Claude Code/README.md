@@ -21,7 +21,8 @@ same core rules as every other tool.
   before any agent acts on it, and agents can't turn the check off. It's
   macOS-only, needs `sudo bash install.sh`, and changes system-wide Claude
   Code settings. Read
-  [Content Integrity Agent.md](../../Information%20Technology/Content%20Integrity%20Agent.md)
+  [its README](Content%20Gate/README.md) and the
+  [Content Integrity Agent](../../Information%20Technology/Content%20Integrity%20Agent.md)
   first.
 - **[Skills Mapping.md](Skills%20Mapping.md)** lists which Claude Code
   skills, connectors (Gmail, Calendar, Drive, Notion, Figma, Vercel) and

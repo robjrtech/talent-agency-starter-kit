@@ -36,6 +36,9 @@ This caps one session. The cap across sessions and devices still relies on
   project.
 - **Recurring tasks:** run them as **Local** tasks in an open session. The
   kit doesn't set up a cloud schedule for Codex.
+- **Resuming sub-agents:** if an interrupted sub-agent can't be resumed
+  here, start a new one and point it at the progress it saved to disk
+  (Routing.md Rule 5).
 - **Skills and connectors:** the Claude Code Skills Mapping doesn't apply.
   Codex skills and MCP servers can be added to a generated agent by hand,
   but rerunning the generator overwrites it, so put lasting changes in

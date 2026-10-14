@@ -190,12 +190,14 @@ plan with usage limits:
   task directly rather than spawning sub-agents of its own — ask the user
   before going deeper, so the delegation tree stays shallow and auditable.
 - Agents **save progress to disk as they go**. Resume an interrupted agent
-  (in Claude Code, with SendMessage) instead of restarting it.
+  instead of restarting it, if your tool can (see `Adapters/`); otherwise
+  start a new one and point it at the progress it saved.
 
 Why: several Deep-tier subagents running in parallel can use up a whole
-usage window in minutes, and all of them can fail partway through.
+usage window in minutes, and if they all run out partway through, all of
+that work is lost.
 
-#### Checking usage across sessions and devices (added 2026-10-07)
+#### Checking usage across sessions and devices
 
 "Check usage first" above assumed one session tracking its own count. That
 breaks when the user runs multiple agent sessions at once, in one tool or several — different

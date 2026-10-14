@@ -6,7 +6,7 @@
 - **Approved:** <date, filled in only when the user approves in session>
 - **Method:** <Cloud (scheduled cloud run) | Local (timer in an open session, or started by name)>
 - **Schedule:** <e.g. weekdays 08:00 local; 1st of each month 09:00>
-- **Routine / timer ID:** <filled in by the Scheduling Agent when armed>
+- **Cloud run / timer ID:** <filled in by the Scheduling Agent when armed>
 - **Written by:** Process Agent · **Scheduled by:** Scheduling Agent
 
 ## Purpose
