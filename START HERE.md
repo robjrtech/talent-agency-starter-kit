@@ -79,8 +79,8 @@ Tip: you can call any helper by name, for example `security-engineer`,
 - **Where finished work goes (`Operations/Publishing Agent.md`).** The
   rules say finished work gets filed in one place you choose, such as a
   shared folder, a wiki or a docs tool. Replace `<your publishing workspace>`
-  in `Overview.md` with yours. If you skip this, work is filed in each
-  project's folder. Using Notion? See `Adapters/Notion/`.
+  in `Overview.md` with yours. If you skip this, work is filed in a
+  `Published/` folder inside each project. Using Notion? See `Adapters/Notion/`.
 - **Content Gate (`Adapters/Claude Code/Content Gate/`).** An advanced
   safety guard for Claude Code against malicious web pages that try to
   trick the AI. It's Mac-only, needs your admin password

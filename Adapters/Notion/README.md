@@ -13,7 +13,8 @@ and the core rules don't depend on Notion.
    [Adapters/](../README.md).
 3. Tell your AI where the workspace is, for example: *"Our publishing
    workspace is the Notion page <your Notion page URL>."* Or write the URL
-   into the publishing gate policy in `Overview.md`.
+   into the publishing gate policy in `Overview.md` (keep it out of any
+   public copy of this folder, such as a public fork).
 
 ## How the Publishing Agent uses it
 
@@ -26,4 +27,4 @@ and the core rules don't depend on Notion.
 
 You don't need to do anything here. Point the publishing gate at whatever
 you use (a shared folder, Google Drive, Confluence, a wiki), or leave it
-unset, and work is filed in the project's own folder in `Projects/`.
+unset, and work is filed in `Projects/<project>/Published/`.

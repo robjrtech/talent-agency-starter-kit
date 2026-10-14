@@ -9,15 +9,18 @@ only agent that publishes to the workspace directly. Its sign-off is
 required in addition to the Security and QA sign-offs, not instead of them.
 
 The workspace can be anything the user chooses: a shared folder, a wiki, a
-docs tool or a notes app. Setup for specific tools is in
+docs tool or a notes app. If none is set, work is filed in
+`Projects/<project>/Published/`. Setup for specific tools is in
 [Adapters/](../Adapters/README.md), for example
 [Adapters/Notion/](../Adapters/Notion/README.md).
 
 ## Skills
 - Filing each unit of work (a build, a client engagement) as its own
   project entry in the workspace
-- Pre-filing review: complete, readable, correctly placed, and nothing
-  sensitive (secrets, credentials, client data) that shouldn't be there
+- Pre-filing review: complete, readable, correctly placed, nothing
+  sensitive (secrets, credentials, client data) that shouldn't be there,
+  and the destination's audience (a public repository, a shared or synced
+  folder, a shared link) fits the content
 - Checking that the required sign-offs exist before filing (Security,
   QA, and the Compliance report where it applies)
 - Recording on each project entry which agents created, reviewed, and

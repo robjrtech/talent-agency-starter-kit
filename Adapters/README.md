@@ -48,5 +48,6 @@ user chooses. Setup for specific workspaces:
 
 - [Notion](Notion/README.md)
 
-With no workspace set, work is filed in the project's own folder in
-`Projects/`.
+With no workspace set, work is filed in `Projects/<project>/Published/`.
+Whatever the workspace, the Publishing Agent checks who can read it before
+filing.

@@ -99,7 +99,8 @@ To install for one tool only: `python3 "Agent Definitions/generate.py" --tool co
 - **Publishing workspace.** The rules file finished work in one workspace
   you choose. Replace `<your publishing workspace>` in `Overview.md` with
   yours (a shared folder, a wiki, a docs tool), or leave it and work is
-  filed in each project's folder. Tool setup, for example
+  filed in `Projects/<project>/Published/`. Either way, nothing sensitive
+  is filed anywhere public. Tool setup, for example
   [Notion](Adapters/Notion/README.md), is in `Adapters/`.
 - **Content Gate** (`Adapters/Claude Code/Content Gate/`). A Claude Code,
   macOS-only defense against prompt injection from web pages and connectors.
@@ -112,8 +113,10 @@ To install for one tool only: `python3 "Agent Definitions/generate.py" --tool co
 - **Notion Agent renamed to Publishing Agent.** The publishing gate no
   longer assumes Notion. After updating, rerun
   `python3 "Agent Definitions/generate.py"`, then delete the old
-  `notion-agent` file from your tool's agents folder (the generator flags it as
-  `stale` but doesn't delete it). If you use Notion, see
+  `notion-agent` file (`notion-agent.md`, `.toml` or `.agent.md`) from each
+  tool's agents folder. The generator lists it as `stale` for each tool it
+  processes but doesn't delete it, and an old agent left behind still
+  follows the Notion-only rules. If you use Notion, see
   `Adapters/Notion/`.
 
 ## Make it yours

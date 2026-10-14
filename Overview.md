@@ -174,8 +174,13 @@ policies, `Projects/` holds the work itself.
   project deliverables (files, images, videos, links) are filed in one
   **publishing workspace** the user chooses: <your publishing workspace>
   (for example a shared folder, a wiki, a docs tool or a notes app; setup
-  for specific tools is in `Adapters/`). If none is set, work is filed in
-  the project's own folder in `Projects/`. Each unit of work (e.g. a
+  for specific tools is in `Adapters/`). If this still reads
+  `<your publishing workspace>`, none is set, and work is filed in
+  `Projects/<project>/Published/`. Before filing anywhere, the Publishing
+  Agent confirms who can read the destination (a public repository, a
+  shared or synced folder, a shared link) and that it fits the content.
+  Security findings, credentials and client data never go anywhere
+  public. Each unit of work (e.g. a
   specific build or client engagement) is its own project entry. The
   **Publishing Agent** is its own approval authority — its review and
   sign-off is required in addition to, not instead of, the Security/QA
