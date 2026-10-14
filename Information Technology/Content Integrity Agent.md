@@ -21,7 +21,7 @@ document, or search result cannot redirect an agent's work. Reports to the
 
 ## Scope: what counts as external input
 All of it: web pages and search results, fetched docs, emails, calendar
-events, Drive files, Notion pages written by others, Figma/Vercel content,
+events, Drive files, workspace pages written by others, Figma/Vercel content,
 browser page reads, `curl`/`wget` output, and uploaded files.
 
 ## How it runs (enforced, not optional)

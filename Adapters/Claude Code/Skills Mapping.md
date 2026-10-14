@@ -43,7 +43,7 @@ is still loaded. See [Overview.md](../../Overview.md) for the department/agent s
 | **Scheduling Agent** | `anthropic-skills:schedule` / `schedule` (cron routines), `loop`, `anthropic-skills:morning` |
 | **Process Agent** | `loop` (recurring workflows — secondary owner alongside Scheduling), `anthropic-skills:skill-creator` (turning an SOP into a repeatable skill) |
 | **Vendor/Ops Agent** | none of the loaded skills fit — genuinely outside this skill set, not a gap |
-| **Notion Agent** | none of the loaded skills map directly — works through the connected Notion MCP tools (search/fetch/create/update pages), not a packaged skill |
+| **Publishing Agent** | none of the loaded skills map directly — when the workspace is Notion, works through the connected Notion MCP tools (search/fetch/create/update pages), not a packaged skill |
 | **Operations Automation Agent** | none of the loaded skills map directly — reads calendars and Notion through tools and connectors; runs under routines made with `schedule` or local `loop` timers armed by the Scheduling Agent |
 
 ## Research and Development
@@ -102,8 +102,8 @@ Local application access policy; this table is specifically about dedicated
 service connectors.
 
 **Governance, on top of what's in each row:**
-- **Filing to Notion still goes through the Notion Agent.** Drafting a doc via Google
-  Drive, or a spec via some other connector, doesn't bypass the Notion publishing gate —
+- **Filing still goes through the Publishing Agent.** Drafting a doc via Google
+  Drive, or a spec via some other connector, doesn't bypass the publishing gate —
   it still has to be reviewed and approved before it's filed as a project.
 - **Sending/creating/deploying is a visible or hard-to-reverse action.** Emails (Gmail),
   calendar invites (Google Calendar), and deployments (Vercel) reach other people or
@@ -132,10 +132,10 @@ service connectors.
 | System Design Engineer | none directly | |
 | Content Integrity Agent | all read-type connectors (Gmail, Drive, Notion, Calendar, Figma, Vercel, Claude Docs) + WebFetch/WebSearch/browser reads | screens their output via hooks; never writes or sends through any connector |
 | Scheduling Agent | Google Calendar | primary owner — coordinating calendars, deadlines, invites |
-| Process Agent | Google Drive | drafting SOPs before they're filed through the Notion Agent |
+| Process Agent | Google Drive | drafting SOPs before they're filed through the Publishing Agent |
 | Vendor/Ops Agent | Gmail, Google Calendar | vendor communication (confirm before sending); coordination meetings |
-| Notion Agent | Notion | primary and only owner of direct publishing — see Overview.md's Notion publishing gate |
+| Publishing Agent | Notion (if that's the publishing workspace; see `Adapters/Notion/`) | primary and only owner of direct publishing — see Overview.md's publishing gate |
 | Research Agent | Google Drive | storing source material and notes |
 | Prototyping Agent | Figma, Vercel | mockups; deploying POC builds for review |
-| Product Agent | Google Drive | drafting specs/roadmaps before they're filed through the Notion Agent |
+| Product Agent | Google Drive | drafting specs/roadmaps before they're filed through the Publishing Agent |
 | Quantitative Researcher | Google Drive | model/data working files |

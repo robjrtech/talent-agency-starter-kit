@@ -50,7 +50,7 @@ See [Adapters/](Adapters/README.md) for what each tool supports.
 
 - **Finance and Accounting:** Bookkeeping Agent, Finance Automation Agent, Financial Analyst, Financial Risk Manager, Invoicing Agent, Reporting Agent
 - **Information Technology:** C++ Engineer, Content Integrity Agent, Deployment Agent, iOS Engineer, IT Automation Agent, Python Engineer, QA Engineer, React Native Engineer, Security Engineer, Support-Triage Agent, Sysadmin Agent, System Design Engineer, UI Designer, UI Lead, UX Agent, Web Engineer
-- **Operations:** Notion Agent, Operations Automation Agent, Process Agent, Scheduling Agent, Vendor-Ops Agent
+- **Operations:** Operations Automation Agent, Process Agent, Publishing Agent, Scheduling Agent, Vendor-Ops Agent
 - **Research and Development:** Product Agent, Prototyping Agent, Quantitative Researcher, Research Agent, Research Automation Agent
 
 Each department's **automation agent** runs that department's repetitive tasks
@@ -96,14 +96,25 @@ To install for one tool only: `python3 "Agent Definitions/generate.py" --tool co
   projects that handle financial data, modeled on the IT controls auditors
   test under the US Sarbanes-Oxley Act. Voluntary, not legal compliance.
   You assign the responsibilities to whichever agents you have.
-- **Notion publishing.** The rules file finished work in Notion. Replace
-  `<your Notion page URL>` in `Overview.md` and `Operations/Notion Agent.md`
-  with your own page, or tell your AI to skip that step.
+- **Publishing workspace.** The rules file finished work in one workspace
+  you choose. Replace `<your publishing workspace>` in `Overview.md` with
+  yours (a shared folder, a wiki, a docs tool), or leave it and work is
+  filed in each project's folder. Tool setup, for example
+  [Notion](Adapters/Notion/README.md), is in `Adapters/`.
 - **Content Gate** (`Adapters/Claude Code/Content Gate/`). A Claude Code,
   macOS-only defense against prompt injection from web pages and connectors.
   It installs system-wide Claude Code hooks and needs `sudo`. Read
   [Content Integrity Agent.md](Information%20Technology/Content%20Integrity%20Agent.md)
   before installing it. In other tools the same rule applies as policy.
+
+## Upgrading
+
+- **Notion Agent renamed to Publishing Agent.** The publishing gate no
+  longer assumes Notion. After updating, rerun
+  `python3 "Agent Definitions/generate.py"`, then delete the old
+  `notion-agent` file from your tool's agents folder (the generator flags it as
+  `stale` but doesn't delete it). If you use Notion, see
+  `Adapters/Notion/`.
 
 ## Make it yours
 

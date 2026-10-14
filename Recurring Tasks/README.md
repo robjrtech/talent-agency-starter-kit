@@ -9,7 +9,7 @@ Each department has one agent that executes its recurring tasks:
 |---|---|---|
 | Finance and Accounting | **Finance Automation Agent** | transaction import and categorization prep, overdue-invoice report, month-end close checklist, recurring P&L / budget-vs-actual runs |
 | Information Technology | **IT Automation Agent** | dependency and vulnerability scans, backup and uptime checks, error-log sweeps, stale-branch and broken-link reports |
-| Operations | **Operations Automation Agent** | weekly calendar and deadline digest, vendor renewal reminders, Notion filing checks |
+| Operations | **Operations Automation Agent** | weekly calendar and deadline digest, vendor renewal reminders, publishing-workspace filing checks |
 | Research and Development | **Research Automation Agent** | topic and competitor monitoring digests, source link-rot checks, recurring data pulls for models |
 
 ## Who does what
@@ -77,7 +77,7 @@ Recurring Tasks/
 Create a department's directory on first use. Like `Self-Improvement/`, run
 logs are **one new, uniquely-named file per run**, so two devices or sessions
 can never race on the same file. Cloud runs can't write here. Their results
-go wherever the task file says (a Notion page, a Drive doc, a draft email),
+go wherever the task file says (a workspace page, a shared doc, a draft email),
 and the routine's own history is the run log.
 
 ## Statuses

@@ -34,8 +34,8 @@ run prepares it and stops. Write "none" if there is nothing.>
 uncategorizable transaction, a critical CVE, a missing input file.>
 
 ## Output and reporting
-<Where the result goes and who is told: the run log, a Notion page through
-the Notion publishing gate, a draft email for the user, etc.>
+<Where the result goes and who is told: the run log, a workspace entry through
+the publishing gate, a draft email for the user, etc.>
 
 ## Change history
 | Date | Change | Back to Proposed? |

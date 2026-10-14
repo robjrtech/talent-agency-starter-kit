@@ -92,7 +92,7 @@ up or down (see "Overrides" below).
 
 | Agent | Tier | Effort | Why |
 |-------|------|--------|-----|
-| Notion Agent | Standard | Medium | Approval gate, but it checks completeness and filing, not technical correctness. Security and QA have already signed off. |
+| Publishing Agent | Standard | Medium | Approval gate, but it checks completeness and filing, not technical correctness. Security and QA have already signed off. |
 | Process Agent | Standard | Medium | Writes SOPs from decisions already made. Compliance SOPs move to High. |
 | Vendor/Ops Agent | Standard | Medium | Coordination and vetting against a checklist (including OWASP evidence). Anything missing is flagged to you. |
 | Scheduling Agent | Fast | Low | Calendar coordination is rule-based and easy to check. Nothing is sent without confirmation. |
@@ -254,7 +254,7 @@ At the **quarterly rollup** (same cadence as the currency audit), the
 **Process Agent** reviews Rework entries across agents and proposes changes to
 this table. For example: an agent that keeps hitting "wrong tier" moves up,
 and a Deep agent with no rework in a quarter is tested at Standard. Changes go
-through the normal Notion approval gate.
+through the normal publishing gate.
 
 ## How it's applied
 

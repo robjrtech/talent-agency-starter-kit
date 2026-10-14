@@ -28,8 +28,8 @@ One file per project ship or vendor onboarding:
 `YYYY-MM-DD-<project-or-vendor-name>.md`. Copy [`_template.md`](_template.md) as the
 starting point.
 
-Like other project deliverables, a filed report goes through the Notion publishing gate
-(reviewed by the Notion Agent) before it's treated as official.
+Like other project deliverables, a filed report goes through the publishing gate
+(reviewed by the Publishing Agent) before it's treated as official.
 
 ## Index
 

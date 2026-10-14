@@ -76,12 +76,11 @@ Tip: you can call any helper by name, for example `security-engineer`,
 - **Choosing models (`Agent Definitions/models.json`).** Each helper is
   Fast, Standard or Deep. This file says which model each level uses in
   each tool. The defaults work; change them later if you want.
-- **Notion publishing (`Operations/Notion Agent.md`).** The rules say
-  finished work gets filed in Notion. If you don't use Notion, tell your AI
-  *"I don't use Notion, skip the Notion publishing step,"* or delete that
-  policy from `Overview.md`. If you do use Notion, replace
-  `<your Notion page URL>` in `Overview.md` and `Operations/Notion Agent.md`
-  with a link to your own page.
+- **Where finished work goes (`Operations/Publishing Agent.md`).** The
+  rules say finished work gets filed in one place you choose, such as a
+  shared folder, a wiki or a docs tool. Replace `<your publishing workspace>`
+  in `Overview.md` with yours. If you skip this, work is filed in each
+  project's folder. Using Notion? See `Adapters/Notion/`.
 - **Content Gate (`Adapters/Claude Code/Content Gate/`).** An advanced
   safety guard for Claude Code against malicious web pages that try to
   trick the AI. It's Mac-only, needs your admin password

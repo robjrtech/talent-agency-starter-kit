@@ -40,3 +40,13 @@ re-checks this folder and `Agent Definitions/models.json`.
 **Adding a tool:** add an entry to `TOOLS` in `generate.py` and to
 `models.json`, then write a README here. If the tool reads `AGENTS.md`, the
 core rules already apply.
+
+## Publishing workspaces
+
+The publishing gate in `Overview.md` files finished work in one workspace the
+user chooses. Setup for specific workspaces:
+
+- [Notion](Notion/README.md)
+
+With no workspace set, work is filed in the project's own folder in
+`Projects/`.

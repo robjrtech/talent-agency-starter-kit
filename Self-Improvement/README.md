@@ -14,8 +14,8 @@ Per-agent logs backing the **Self-improvement** standing policy in
    each agent reviews its own log and drafts proposed wording changes to its own entry
    in Overview.md's Departments and Agents section — the lessons that are worth baking
    into how the role is defined, not just a one-off fix.
-3. **Approval.** Proposed changes go through the Notion publishing gate (filed as a
-   project, reviewed by the Notion Agent) before they're treated as accepted.
+3. **Approval.** Proposed changes go through the publishing gate (filed as a
+   project, reviewed by the Publishing Agent) before they're treated as accepted.
 4. **Fold-in.** Once approved, the **Process Agent** edits the agent's actual entry in
    Overview.md, marks the promoted entry files as applied (add a `**Promoted:**` date),
    and may archive or delete promoted files so the directory doesn't carry stale,
