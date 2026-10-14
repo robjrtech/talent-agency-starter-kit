@@ -16,6 +16,9 @@ actually involved in a given project or vendor relationship.
   categories marked pass / gap / N/A with a reason. Vendor reports record the
   vendor's OWASP Top 10 evidence. The list lives in
   [`OWASP Top 10.md`](OWASP%20Top%2010.md).
+- **If you've turned on the optional SOX-style module**
+  ([`Optional/SOX/`](Optional/SOX/README.md)), projects with financial data also fill
+  in its [report table](Optional/SOX/Report%20table.md).
 - Either review may surface a gap that needs a new or updated SOP — that's the
   **Process Agent**'s job to document, not this folder's.
 

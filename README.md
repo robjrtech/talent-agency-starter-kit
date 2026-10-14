@@ -92,6 +92,10 @@ To install for one tool only: `python3 "Agent Definitions/generate.py" --tool co
 
 ## Optional pieces
 
+- **SOX-style controls** (`Compliance/Optional/SOX/`). Opt-in controls for
+  projects that handle financial data, modeled on the IT controls auditors
+  test under the US Sarbanes-Oxley Act. Voluntary, not legal compliance.
+  You assign the responsibilities to whichever agents you have.
 - **Notion publishing.** The rules file finished work in Notion. Replace
   `<your Notion page URL>` in `Overview.md` and `Operations/Notion Agent.md`
   with your own page, or tell your AI to skip that step.
