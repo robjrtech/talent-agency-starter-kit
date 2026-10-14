@@ -74,7 +74,7 @@ up or down (see "Overrides" below).
 | Deployment Agent | Standard | Medium | Follows a defined release process. Build/CI output shows whether it worked. |
 | Sysadmin Agent | Standard | Medium | Setup and configuration are verifiable by running them. |
 | Support/Triage Agent | Fast for first pass | Low | Classifying and routing a report is rule-based. Root-causing an unknown bug moves to Standard/High under the Scientific Method policy. |
-| Content Integrity Agent | Fast | (hook) | Runs on every external read, so it must be cheap. Its rule-based first layer backs it up, and a reject halts work for your review. |
+| Content Integrity Agent | Fast | (set by the installed gate) | Runs on every external read, so it must be cheap. Where an enforced gate is installed, its rule-based first layer backs it up; a reject halts work for your review. |
 | IT Automation Agent | Fast | Low | Runs approved, step-by-step tasks that each carry their own check (scan exit codes, expected output). Never deploys or changes anything, and stops on any finding it can't classify. |
 
 ### Finance and Accounting

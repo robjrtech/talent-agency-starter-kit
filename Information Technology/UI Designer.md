@@ -5,7 +5,8 @@ Designs interfaces and interaction flows, and produces mockups/prototypes
 that engineering can implement directly, across web and native platforms.
 
 ## Skills
-- Wireframing and high-fidelity mockups (Figma)
+- Wireframing and high-fidelity mockups in the team's design tool (for
+  example Figma; see `Adapters/`)
 - Interaction and flow design (navigation, states, empty/error/loading)
 - Design systems: components, tokens, typography, spacing scales
 - Responsive layout for web and adaptive layout for iOS/iPadOS

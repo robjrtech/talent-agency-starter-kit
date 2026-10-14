@@ -85,8 +85,8 @@ Tip: you can call any helper by name, for example `security-engineer`,
   safety guard for Claude Code against malicious web pages that try to
   trick the AI. It's Mac-only, needs your admin password
   (`sudo bash install.sh`), and changes system-wide Claude settings. Leave
-  it until you're comfortable, then read
-  `Information Technology/Content Integrity Agent.md` first.
+  it until you're comfortable, then read its README
+  (`Adapters/Claude Code/Content Gate/README.md`) first.
 - **Session Heartbeats, Currency Audits, Scientific Method,
   Self-Improvement.** These folders start almost empty on purpose. The
   helpers fill them in as they work. You don't need to touch them.

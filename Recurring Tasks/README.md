@@ -51,7 +51,8 @@ Each task picks one:
   inbound email, documents other people wrote) may only summarize and report
   it. It may not take any action based on it, because no enforced
   untrusted-content gate runs in the cloud. Tasks that must act on external
-  content run locally.
+  content run locally. Where no enforced gate is installed locally either,
+  a task that acts on external content needs the user's go-ahead each run.
 - **Stop, don't guess.** If a run hits something its steps don't cover, an
   unclear item, or a failed verification, it stops, logs why, sets the task
   to **Paused**, and reports. It doesn't retry at the same level (Routing.md

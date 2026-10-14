@@ -105,8 +105,9 @@ To install for one tool only: `python3 "Agent Definitions/generate.py" --tool co
 - **Content Gate** (`Adapters/Claude Code/Content Gate/`). A Claude Code,
   macOS-only defense against prompt injection from web pages and connectors.
   It installs system-wide Claude Code hooks and needs `sudo`. Read
-  [Content Integrity Agent.md](Information%20Technology/Content%20Integrity%20Agent.md)
-  before installing it. In other tools the same rule applies as policy.
+  [its README](Adapters/Claude%20Code/Content%20Gate/README.md) before
+  installing it. In other tools, and in Claude Code without it, the same
+  rule applies as policy.
 
 ## Upgrading
 

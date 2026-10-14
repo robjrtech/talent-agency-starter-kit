@@ -8,8 +8,8 @@ solution resolves it. The user approves the storyboard before the UI
 Designer starts.
 
 ## Storyboard
-Built as a FigJam board through the Figma connector, next to the UI
-Designer's Figma work. Panels, in order:
+Built as a board in the team's design tool (for example FigJam; see
+`Adapters/`), next to the UI Designer's work. Panels, in order:
 1. **Who:** the user/persona and their goal
 2. **Today:** how they try to reach that goal now
 3. **Pain points:** where it breaks down, with evidence
