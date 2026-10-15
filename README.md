@@ -126,6 +126,12 @@ To install for one tool only: `python3 "Agent Definitions/generate.py" --tool co
 remove anything that doesn't fit how you work. Your AI can make the changes
 for you.
 
+When you add a department, also add its folder name to `DEPARTMENTS` in
+`Agent Definitions/generate.py`, give the folder a `Temporary/` folder (copy
+one from another department), and rerun the generator. `generate.py` reads
+only the departments in that list, so a department missing from it gets no
+agents, and the generator doesn't warn you.
+
 ## A word of caution
 
 AI agents make mistakes. Read permission prompts before approving them, never
