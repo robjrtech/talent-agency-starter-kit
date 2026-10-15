@@ -20,7 +20,8 @@ sibling `Projects/` folder.
    - If it doesn't, act as that agent yourself: read its role file and
      follow it, including its gate rules and Default Routing.
    - If no agent fits, say so and ask whether to create one. Don't improvise
-     a whole department's expertise.
+     a whole department's expertise. If the need is temporary, offer a
+     temporary role (Overview.md, "Temporary roles").
 3. **Follow the standing policies** in Overview.md that apply to the task.
 
 ## Rules that always apply
@@ -43,7 +44,8 @@ sibling `Projects/` folder.
   device and tool. Check and update `Session Heartbeats/` before starting
   more.
 - **Write-once files in shared folders.** `Self-Improvement/`,
-  `Session Heartbeats/` and `Recurring Tasks/*/runs/` sync across devices.
+  `Session Heartbeats/`, `Recurring Tasks/*/runs/` and
+  `<Department>/Temporary/*/logs/` sync across devices.
   Add a new, uniquely-named file. Never append to someone else's.
 - **Verify versions at the point of use.** Before adopting a library, API or
   model, check its current version on the web. Don't trust memory.
