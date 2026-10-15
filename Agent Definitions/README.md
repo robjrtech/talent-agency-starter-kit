@@ -20,6 +20,9 @@ under `Projects/`. Per-tool notes are in [Adapters/](../Adapters/README.md).
 
 - **Source of truth:** the role files in each department folder
   (`<Department>/<Agent>.md`). Never edit the generated files directly.
+- **Departments** are listed in `DEPARTMENTS` at the top of `generate.py`.
+  A new department folder is skipped, with no warning, until its name is
+  added there. Subfolders such as `Temporary/` are never read.
 - **Tier and effort** come from each role file's `## Default Routing`
   section. Effort uses the first level listed (for "Medium; High for specs"
   the default is Medium).

@@ -262,8 +262,9 @@ policies, `Projects/` holds the work itself.
   - **No temporary departments.** A temporary need is met with
     temporary roles in existing departments. A new department is a
     permanent change to this file, the user's call, made only for
-    ongoing work. File each charter in the department whose work it
-    most resembles.
+    ongoing work. Its folder must also be added to `DEPARTMENTS` in
+    `Agent Definitions/generate.py`, or its roles get no agents. File
+    each charter in the department whose work it most resembles.
   - **Charter.** Copied from `<Department>/Temporary/_template.md`:
     purpose and scope, why no existing role fits, a **sponsor** (the
     closest-fitting permanent role, from any department, which owns the
