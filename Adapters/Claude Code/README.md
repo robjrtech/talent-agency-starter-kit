@@ -30,5 +30,9 @@ same core rules as every other tool.
 - **Recurring tasks:** the Scheduling Agent arms **Cloud** tasks as routines
   with the `schedule` skill, and **Local** tasks with `/loop` or a session
   cron.
+- **Temporary roles:** launch one as the `general-purpose` subagent with the
+  whole charter as its brief, and pass `model` (`haiku` / `sonnet` / `opus`,
+  the charter's tier in `models.json`). Effort can't be set on that call, so
+  tell the user when the charter asks for High or above.
 - **Resuming sub-agents:** Routing.md's "resume, don't restart" rule uses
   `SendMessage` here.

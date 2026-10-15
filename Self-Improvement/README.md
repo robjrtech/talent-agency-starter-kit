@@ -30,7 +30,9 @@ Per-agent logs backing the **Self-improvement** standing policy in
 **One file per entry, in a per-agent directory:**
 `<Agent Name>/<YYYY-MM-DD>-<slug>-<id>.md` (e.g.
 `Web Engineer/2026-10-07-stale-cache-key-a1b2.md`). Create the agent's directory on
-first use — don't pre-create empty ones for agents that haven't needed one yet. Copy
+first use — don't pre-create empty ones for agents that haven't needed one yet.
+Temporary roles use `Temp - <Role>/` (see the **Temporary roles** policy); at
+decommission that directory moves to the charter's archive folder. Copy
 [`_template.md`](_template.md) for the entry format.
 
 **Why one file per entry, not one shared file per agent:** this folder may be synced

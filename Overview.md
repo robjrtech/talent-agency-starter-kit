@@ -6,7 +6,8 @@ When given a task, look here first to decide **which department it belongs to**,
 then check that department's folder for an agent already scoped to do the work.
 If the relevant folder is empty or no existing agent fits, say so rather than
 improvising a department's worth of expertise — flag that the agent doesn't exist
-yet and ask whether to create one or proceed generally.
+yet and ask whether to create one or proceed generally. If the need is
+temporary, offer a temporary role (see the **Temporary roles** policy).
 
 ## Structure
 
@@ -23,9 +24,9 @@ yet and ask whether to create one or proceed generally.
 │   ├── Compliance/
 │   ├── Session Heartbeats/     ← cross-session/device subagent-cap coordination
 │   ├── Recurring Tasks/        ← approved repetitive tasks per department + run logs
-│   ├── Finance and Accounting/
-│   ├── Information Technology/
-│   ├── Operations/
+│   ├── Finance and Accounting/     ← each department folder has a Temporary/
+│   ├── Information Technology/     ←   folder: temporary-role charters, work
+│   ├── Operations/                 ←   logs, Archive/
 │   └── Research and Development/
 └── Projects/                   ← create this yourself: actual project work, outside Talent Agency
     ├── Case Studies/           ← write-ups of shipped projects
@@ -252,6 +253,48 @@ policies, `Projects/` holds the work itself.
   - Unattended runs don't spawn sub-agents, stop and Pause on anything
     their steps don't cover, and never retry a failure at the same
     level (Routing.md Rule 3).
+- **Temporary roles.** When a task needs a role no existing agent covers
+  and the need is temporary, the department commissions a **temporary
+  role** from a charter instead of a permanent role file. Every department
+  has a `Temporary/` folder for its charters (see
+  `<Department>/Temporary/README.md`); the generator doesn't read that
+  folder, so no agents are generated for it.
+  - **Charter.** Copied from `<Department>/Temporary/_template.md`:
+    purpose and scope, why no existing role fits, a **sponsor** (the
+    closest permanent role in the department, which owns the work
+    afterward), skills and tools with versions checked by web search,
+    tier and effort per [Routing.md](Routing.md) (Deep unless the output
+    is cheap to check, since the role has no track record), and an
+    expiry.
+  - **Validation before any work.** The user approves the charter. The
+    **System Design Engineer** confirms its skills and approach are
+    current, and the **Security Engineer** confirms its tools and data
+    access are least-privilege. Each sign-off is recorded in the charter.
+  - **Running it.** The session or a generic sub-agent acts under the
+    charter as its brief, like the role-file fallback in
+    `Agent Definitions/README.md`. That doesn't carry model or effort, so
+    use a model at the charter's tier or tell the user it ran below it
+    (tool-specific steps are in `Adapters/`). It follows every standing
+    policy, counts toward the global sub-agent cap, and logs to
+    `Self-Improvement/Temp - <Role>/`.
+  - **Work log.** It also writes one new file per session in the
+    charter's `logs/` folder: what it changed, files touched, decisions
+    made and why. A temporary agent can't be asked later, so what isn't
+    written down is lost.
+  - **Validating the work.** All gates apply unchanged (pre/post-build
+    reports, QA, Security/OWASP, compliance review, publishing gate; the
+    published entry names the temporary role and links its charter). The
+    **sponsor** also reviews the output and confirms it can maintain it.
+    Where the sponsor lacks the expertise to judge it, rely on checks that
+    don't need it (QA against real behavior, System Design at Deep) and
+    give any open gap to the user for explicit risk acceptance.
+  - **Decommission.** At expiry: the sponsor takes ownership of the code,
+    docs and open issues; the charter, logs and Self-Improvement folder
+    move to `<Department>/Temporary/Archive/` (never deleted, since
+    reports link to them); lessons that apply more broadly are filed in
+    the sponsor's log. If the same temporary role is needed a second
+    time, the **Process Agent** proposes it as a permanent role for the
+    user's approval.
 
 ## Departments and Agents
 

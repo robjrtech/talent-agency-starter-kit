@@ -29,7 +29,7 @@ tool.
 | [Routing.md](Routing.md) | Which tier (Fast / Standard / Deep) and effort each agent uses, and why |
 | [Agent Definitions/](Agent%20Definitions/) | `generate.py` turns the role files into native agents for each tool; `models.json` picks each tool's model per tier |
 | [Adapters/](Adapters/) | Per-tool setup notes and tool-only features (e.g. the Claude Code Content Gate) |
-| `Finance and Accounting/`, `Information Technology/`, `Operations/`, `Research and Development/` | One Markdown job description per agent |
+| `Finance and Accounting/`, `Information Technology/`, `Operations/`, `Research and Development/` | One Markdown job description per agent, plus a `Temporary/` folder for short-lived roles chartered for a single task |
 | [Compliance/](Compliance/) | Review checklists, starting with the OWASP Top 10 (2025) |
 | [Recurring Tasks/](Recurring%20Tasks/) | Repetitive tasks each department's automation agent runs on a schedule, once you approve them |
 | `Currency Audits/`, `Scientific Method/`, `Self-Improvement/`, `Session Heartbeats/` | Templates the agents fill in as they work |
