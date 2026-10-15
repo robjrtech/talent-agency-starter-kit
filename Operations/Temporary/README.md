@@ -12,6 +12,12 @@ task. If the need is ongoing, propose a permanent role instead. If an existing
 role covers it even partly, use that role and note the gap in its
 Self-Improvement log.
 
+There are no temporary departments. A need that seems to call for a whole new
+department is met with temporary roles filed in the existing departments whose
+work they most resemble; a new department is a permanent change to
+Overview.md, made only for ongoing work. The sponsor can be a permanent role
+from any department, not just this one.
+
 ## Layout
 
 ```text

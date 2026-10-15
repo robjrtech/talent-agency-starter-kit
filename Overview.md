@@ -259,10 +259,15 @@ policies, `Projects/` holds the work itself.
   has a `Temporary/` folder for its charters (see
   `<Department>/Temporary/README.md`); the generator doesn't read that
   folder, so no agents are generated for it.
+  - **No temporary departments.** A temporary need is met with
+    temporary roles in existing departments. A new department is a
+    permanent change to this file, the user's call, made only for
+    ongoing work. File each charter in the department whose work it
+    most resembles.
   - **Charter.** Copied from `<Department>/Temporary/_template.md`:
     purpose and scope, why no existing role fits, a **sponsor** (the
-    closest permanent role in the department, which owns the work
-    afterward), skills and tools with versions checked by web search,
+    closest-fitting permanent role, from any department, which owns the
+    work afterward), skills and tools with versions checked by web search,
     tier and effort per [Routing.md](Routing.md) (Deep unless the output
     is cheap to check, since the role has no track record), and an
     expiry.

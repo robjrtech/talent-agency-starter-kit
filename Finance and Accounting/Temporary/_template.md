@@ -2,7 +2,7 @@
 
 **Status:** <Proposed / Active / Closed>
 **Department:** Finance and Accounting
-**Sponsor:** <closest permanent role in the department; owns the work afterward>
+**Sponsor:** <closest-fitting permanent role, from any department; owns the work afterward>
 **Expiry:** <date, or "at post-build report">
 **Approved by user:** <date, in session — blank until approved>
 
