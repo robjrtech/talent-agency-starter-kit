@@ -1,0 +1,5 @@
+# Keep temporary-role charters byte-exact so their checksums stay valid
+# across operating systems (no CRLF conversion).
+**/Temporary/**/charter.md -text
+**/Temporary/**/charter.approved.md -text
+**/Temporary/**/charter.sha256 -text

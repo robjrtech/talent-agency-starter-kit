@@ -8,7 +8,8 @@ The most complete adapter: everything in the kit was first built here.
 python3 "Agent Definitions/generate.py" --tool claude
 ```
 
-Writes one subagent per role to `~/.claude/agents/<name>.md`, with `model`
+Writes one subagent per role to `~/.claude/agents/<name>.md`, and installs
+each skill in [Skills/](Skills/) to `~/.claude/skills/<name>/SKILL.md`. Agents get `model`
 (`haiku` / `sonnet` / `opus`, from `models.json`) and `effort`. Restart
 Claude Code to load them, then call one by name, e.g. `security-engineer`.
 `CLAUDE.md` at the kit root imports `AGENTS.md`, so Claude Code reads the
@@ -30,9 +31,12 @@ same core rules as every other tool.
 - **Recurring tasks:** the Scheduling Agent arms **Cloud** tasks as routines
   with the `schedule` skill, and **Local** tasks with `/loop` or a session
   cron.
-- **Temporary roles:** launch one as the `general-purpose` subagent with the
-  whole charter as its brief, and pass `model` (`haiku` / `sonnet` / `opus`,
-  the charter's tier in `models.json`). Effort can't be set on that call, so
-  tell the user when the charter asks for High or above.
+- **[`/temp-role` skill](Skills/temp-role/SKILL.md)** runs the Temporary
+  roles policy from start to finish. `/temp-role <task>` checks for an
+  existing fit, drafts the charter, gets the System Design and Security
+  reviews, stops for your approval and launches the role. `run`, `close` and
+  `status` cover the rest of its life. It runs only when you type it, and it
+  refuses to run inside a sub-agent. `generate.py --tool claude` installs it
+  to `~/.claude/skills/temp-role/`. Skills load without a restart.
 - **Resuming sub-agents:** Routing.md's "resume, don't restart" rule uses
   `SendMessage` here.
