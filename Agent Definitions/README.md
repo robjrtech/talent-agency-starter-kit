@@ -39,9 +39,27 @@ under `Projects/`. Per-tool notes are in [Adapters/](../Adapters/README.md).
   hooks, not an agent) and any file without a `## Default Routing` section
   (such as the UI Lead's preferences log).
 
+## Claude Code skills
+
+For Claude Code, the generator also installs the kit's skills. Each
+`Adapters/Claude Code/Skills/<name>/SKILL.md` is the source. It's written to
+`~/.claude/skills/<name>/SKILL.md`, with `<<AGENCY>>` replaced by this
+folder's path and a marker comment added after the frontmatter.
+- **Same safety rules as agents:** it only overwrites files this checkout
+  generated, and it reports stale ones without deleting them.
+- **Everything is checked before anything is written.** The folder name must
+  be lowercase letters, digits and hyphens, can't be `synced` (Claude Code's
+  own folder), and must match the frontmatter `name`.
+- **Only `SKILL.md` is installed.** The generator warns about any other file
+  in the skill's folder.
+
+Keep the frontmatter valid YAML, and quote any value that contains `: `. If it
+fails to parse, Claude Code loads the skill with none of its fields.
+
 ## Running it
 
-After any change to a role file, Routing.md or models.json:
+After any change to a role file, Routing.md, models.json or a skill in
+`Adapters/Claude Code/Skills/`:
 
 ```
 cd "Agent Definitions"
@@ -53,8 +71,11 @@ python3 generate.py --tool all           # every supported tool
 
 With no `--tool`, the script writes for each tool whose home folder exists
 (`~/.claude`, `~/.codex`, `~/.cursor`, `~/.gemini`, `~/.copilot`). It only
-overwrites files it generated (it checks for its marker), and it reports
-definitions whose role file was removed rather than deleting them.
+overwrites files this checkout generated. It checks for its marker and this
+folder's path, so files from a second copy of the kit are left alone. It
+reports definitions whose role file was removed rather than deleting them. If
+you move this folder, files generated from its old location count as another
+copy's, so delete them by hand and rerun.
 
 ## New agents load at session start
 

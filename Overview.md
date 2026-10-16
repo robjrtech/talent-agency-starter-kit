@@ -258,7 +258,9 @@ policies, `Projects/` holds the work itself.
   role** from a charter instead of a permanent role file. Every department
   has a `Temporary/` folder for its charters (see
   `<Department>/Temporary/README.md`); the generator doesn't read that
-  folder, so no agents are generated for it.
+  folder, so no agents are generated for it. In Claude Code, the
+  `/temp-role` skill runs the whole lifecycle below; any other tool
+  follows the checklist in `AGENTS.md`.
   - **No temporary departments.** A temporary need is met with
     temporary roles in existing departments. A new department is a
     permanent change to this file, the user's call, made only for

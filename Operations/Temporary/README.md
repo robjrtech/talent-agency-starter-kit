@@ -41,6 +41,18 @@ Like `Self-Improvement/`, every log is a new, uniquely-named file, never an
 append, because this folder may sync across devices. The `<id>` is a short
 session-ID slug or 4 random hex characters.
 
+## Shortcut
+
+In Claude Code, `/temp-role <task>` runs the lifecycle below for you. It
+checks for an existing fit, drafts the charter, gets both gate reviews, stops
+for your approval and launches the role. Use `/temp-role run <role>` to resume
+one, `/temp-role close <role>` to hand it off and archive it, and
+`/temp-role status` to list them all. It also saves an approved copy of each
+charter with a checksum, so an unapproved edit is caught before the next run.
+That's a tripwire, not a tamper-proof lock. In
+other tools, ask your AI to "commission a temporary role" and it follows the
+checklist in `AGENTS.md`. Either way, the steps below are what it follows.
+
 ## Lifecycle
 
 | Step | Who | Done when |
