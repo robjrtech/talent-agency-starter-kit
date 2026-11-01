@@ -28,7 +28,6 @@ is still loaded. See [Overview.md](../../Overview.md) for the department/agent s
 | **UX Agent** | `artifact-diagramming` (journey/flow diagrams); storyboards built in FigJam via the Figma connector |
 | **UI Designer** | `design`, `dataviz`, `artifact-design`, `artifact-diagramming` |
 | **UI Lead** | `design` (critique), `artifact-design` |
-| **iOS Engineer** | `code-review`, `simplify`, `run` |
 | **Web Engineer** | `code-review`, `simplify`, `run`, `artifact-design`, `artifact-diagramming`, `artifact-capabilities`, `claude-api` |
 | **React Native Engineer** | `code-review`, `simplify`, `run` (launch/verify on simulators, emulators, web, desktop) |
 | **Security Engineer** | `security-review` (primary owner), `code-review` (security-focused passes) |
@@ -89,7 +88,7 @@ of what worked, not just a plan — that's the "track outcomes" part of the poli
 | Scheduling Agent | calendar coordination | Calendar app | full | — |
 | UI Designer | mockups, prototypes | Figma desktop | full | — |
 | Sysadmin / Deployment / Security / QA / System Design Engineer | ops write-ups only | TextEdit for the report itself | full | — |
-| Python / C++ / iOS / Web / React Native Engineer | n/a | Bash/Edit/Write tools already do this directly; Terminal and VS Code are **click-tier** under computer use (no typing), so computer use adds nothing here | click | — |
+| Python / C++ / Web / React Native Engineer | n/a | Bash/Edit/Write tools already do this directly; Terminal and VS Code are **click-tier** under computer use (no typing), so computer use adds nothing here | click | — |
 | Vendor/Ops Agent | none identified yet | — | — | — |
 
 ## Third-Party Integration Mapping (connectors)
@@ -122,7 +121,7 @@ service connectors.
 | Sysadmin Agent | none of the connected services fit — genuinely local/infra work, not a gap | |
 | Deployment Agent | Vercel | deployments, projects, env vars, domains, logs — primary owner |
 | Support/Triage Agent | Gmail — weak fit | only if a bug report actually arrives by email |
-| Python / C++ / iOS / React Native Engineer | none — code lives locally, no connector involved | |
+| Python / C++ / React Native Engineer | none — code lives locally, no connector involved | |
 | UX Agent | Figma (FigJam) | building the problem/solution storyboard |
 | UI Designer | Figma | design context, screenshots, generating/syncing designs, Code Connect |
 | UI Lead | Figma — read only | screenshots and design context of variations under review |

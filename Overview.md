@@ -323,7 +323,6 @@ policies, `Projects/` holds the work itself.
 - **UX Agent** — researches UX trends and best practices and storyboards the current problem and how the solution resolves it, for the user's approval before UI work starts.
 - **UI Designer** — designs interfaces and interaction flows, and produces mockups/prototypes; presents at most 2 variations to the UI Lead.
 - **UI Lead** — reviews the UI Designer's variations and gets the user's approval before handoff to engineering; learns the user's design choices, then challenges design biases with real-world evidence.
-- **iOS Engineer** — builds and maintains native iOS/iPadOS apps, from architecture through App Store release.
 - **Web Engineer** — builds and maintains the web application, from UI implementation through API integration and deployment.
 - **React Native Engineer** — builds and maintains cross-platform React Native apps (iOS, Android, web, and desktop) from one TypeScript codebase.
 - **Security Engineer** — threat-models and hardens apps that handle sensitive data; owns secrets, encryption, and security reviews; owns the compliance review (GDPR, SOC 2, and other applicable frameworks).

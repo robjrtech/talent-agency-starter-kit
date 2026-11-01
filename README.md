@@ -49,7 +49,7 @@ See [Adapters/](Adapters/README.md) for what each tool supports.
 ## The team
 
 - **Finance and Accounting:** Bookkeeping Agent, Finance Automation Agent, Financial Analyst, Financial Risk Manager, Invoicing Agent, Reporting Agent
-- **Information Technology:** C++ Engineer, Content Integrity Agent, Deployment Agent, iOS Engineer, IT Automation Agent, Python Engineer, QA Engineer, React Native Engineer, Security Engineer, Support-Triage Agent, Sysadmin Agent, System Design Engineer, UI Designer, UI Lead, UX Agent, Web Engineer
+- **Information Technology:** C++ Engineer, Content Integrity Agent, Deployment Agent, IT Automation Agent, Python Engineer, QA Engineer, React Native Engineer, Security Engineer, Support-Triage Agent, Sysadmin Agent, System Design Engineer, UI Designer, UI Lead, UX Agent, Web Engineer
 - **Operations:** Operations Automation Agent, Process Agent, Publishing Agent, Scheduling Agent, Vendor-Ops Agent
 - **Research and Development:** Product Agent, Prototyping Agent, Quantitative Researcher, Research Agent, Research Automation Agent
 

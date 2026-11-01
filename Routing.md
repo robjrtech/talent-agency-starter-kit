@@ -68,7 +68,7 @@ up or down (see "Overrides" below).
 | Security Engineer | Deep | High | Security gate and OWASP Top 10 review. A missed vulnerability isn't visible until it's exploited. |
 | UI Lead | Deep | High | Design gate. Must tell your preferences apart from biases and argue with evidence, which is pure judgment. |
 | QA Engineer | Standard | Medium; High for test plans | Running tests is checkable work. Designing the test plan decides what gets caught, so it's raised. |
-| Python / C++ / iOS / Web / React Native Engineer | Standard | Medium | Builds from an approved plan. Tests and code review catch errors. Moves up after a failed fix (see Escalation). |
+| Python / C++ / Web / React Native Engineer | Standard | Medium | Builds from an approved plan. Tests and code review catch errors. Moves up after a failed fix (see Escalation). |
 | UI Designer | Standard | Medium | Produces variations from an approved storyboard, and the UI Lead and you review every one. |
 | UX Agent | Standard | Medium; High for storyboards | Research gathering is checkable. The storyboard defines the problem everything else solves, so it's raised. |
 | Deployment Agent | Standard | Medium | Follows a defined release process. Build/CI output shows whether it worked. |
