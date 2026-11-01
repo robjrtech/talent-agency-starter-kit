@@ -30,9 +30,10 @@ kit's earlier iOS Engineer.
   local persistence (SwiftData/Core Data) and secure storage of sensitive
   data. These frameworks are documented by Apple, not swift.org
 - Xcode project and build configuration, signing, simulators and devices,
-  App Store submission, TestFlight and release. Signing identities,
-  provisioning profiles and App Store Connect API keys are credentials: they
-  stay in the Keychain or the CI secret store, never in the repo
+  App Store submission, TestFlight and release. Signing identities
+  (certificate and private key) and App Store Connect API keys are
+  credentials: they stay in the Keychain or the CI secret store, never in the
+  repo. Provisioning profiles stay out of the repo too
 - Server and CLI on Linux and Windows: SwiftPM release builds with
   cross-module optimization, static standard library linking and the Static
   Linux SDK, multi-stage container images, and crash backtraces for
@@ -44,9 +45,11 @@ kit's earlier iOS Engineer.
   FFM mode only for a named need, since it requires JDK 25+)
 - WebAssembly: Swift SDKs for Wasm, porting code within Wasm's limits,
   JavaScript interop, testing and debugging
-- Secrets off Apple platforms use the platform's own store: Android Keystore
-  (through swift-java) on Android, and an OS or service secret store on
-  servers. A Wasm module ships to the client, so it never holds secrets
+- Secrets off Apple platforms use the platform's own store. On Android,
+  Android Keystore (through swift-java) holds the keys, and other secrets are
+  stored encrypted under a Keystore-held key. On servers, use an OS or
+  service secret store. A Wasm module is a distributable binary that anyone
+  running it can inspect, so it never holds secrets
 - C and C++ interop (imported C types, functions and macros; pointer
   parameters), coordinated with the C++ Engineer. Any module that uses unsafe
   pointers or C interop turns on strict memory safety checking
